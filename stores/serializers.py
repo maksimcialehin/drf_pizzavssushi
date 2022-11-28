@@ -23,6 +23,7 @@ class PizzeriaDetailSerializer(serializers.ModelSerializer):
             'restaurant_name',
             'street',
             'city',
+            'zip_code',
             'website',
             'phone_number',
             'description',

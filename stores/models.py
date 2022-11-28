@@ -9,7 +9,7 @@ class Pizzeria(models.Model):
     zip_code = models.IntegerField(blank=True, default=0)
     website = models.URLField(max_length=420, blank=True)
     phone_number = models.CharField(
-        validators=[RegexValidator(regex=r'^\1?\d{9,10}$')],
+        validators=[RegexValidator(regex=r'^\d{9,10}$')],
         max_length=10,
         blank=True
         )
